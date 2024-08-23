@@ -2,6 +2,10 @@
 let name = 'Roman';
 let age = 47;
 let sex;
+let newVar;
+
+newVar = 100;
+console.log(newVar)
 
 console.log('Task 1');
 console.log(`Name: ${name}`);
