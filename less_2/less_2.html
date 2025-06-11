@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="task_one">
+    <h3>Task 1</h3>
+    <p>Введите номер месяца от 1 до 12</p>
+    <form action="" name="FormOne" id="form_one" onsubmit="return taskOne(this)">
+      <input type="text" name="month" id="month" placeholder="1-12" required>
+      <input type="submit">
+    </form>
+    <p id="errFormOne"></p>
+    <div>
+      Время года: <br>
+      <span id="out_one_north" hidden></span><br>
+      <span id="out_one_south" hidden></span><br>
+    </div>
+    <input type="button" id="resetFormOne" value="reset">
+  </div>
+  <div class="task_two">
+    <h3>Task 2</h3>
+    <p>Введите два числа и выберете действие</p>
+    <form action="" name="FormTwo" id="form_two" onsubmit="return taskTwo(this)">
+      <label for="first">Первое число</label><br>
+      <input type="text" name="first" id="first" placeholder="First number" required><br>
+      <label for="second">Второе число</label><br>
+      <input type="text" name="second" id="second" placeholder="Second number" required><br>
+      <p id="errFormTwo" hidden></p>
+      <label for="operation_two">Действие</label><br>
+      <select name="operation_two" id="operation_two">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <input type="submit">
+      
+    </form>
+    <div>Результат: <span id="out_two"></span></div>
+    <input type="button" id="resetFormTwo" value="reset">
+  </div>
+  <div class="task_three">
+    <h3>Task 3</h3>
+    <form action="" name="FormThree" id="form_three" onsubmit="return taskThree(this)">
+      <input type="text" name="point" id="point" placeholder="0-100" required>
+      <input type="submit">
+    </form>
+    <p id="errFormThree"></p>
+    <div>
+      Оценка: <span id="out_three"></span>
+    </div>
+    <input type="button" id="resetFormThree" value="reset">
+  </div>
+  <div class="task_four">
+    <h3>Task 4</h3>
+    <p>Шахматная доска (Консоль)</p>
+    <input type="button" value="Press" id="press_four">
+  </div>
+  <div class="task_five">
+    <h3>Task 5</h3>
+    <p>Елочка (Консоль)</p>
+    <form action="" name="FormFive" id="form_five" onsubmit="return taskFive(this)">
+      <label for="h_tree">Введите высоту дерева от 2 до 10</label><br>
+      <input type="text" name="h_tree" id="h_tree" placeholder="2-10" required>
+      <input type="submit"><br>
+    </form>
+    <p id="errFormFive"></p>
+    <input type="button" id="resetFormFive" value="reset">
+  </div>
+  <div class="task_six">
+    <h3>Task 6</h3>
+    <p>Таблица умножения (Консоль)</p>
+    <input type="button" value="Press" id="press_six">
+  </div>
+  <div class="task_seven">
+    <h3>Task 7</h3>
+    <p>Факториал</p>
+    <form action="" name="FormSeven" id="form_seven" onsubmit="return taskSeven(this)">
+      <label for="userIntTs7">Введите целое положительное число</label><br>
+      <input type="text" name="userIntTs7" id="userIntTs7" placeholder="positive integer" required>
+      <input type="submit"><br>
+    </form>
+    <p id="errFormSeven"></p>
+    <div>Факториал числа <span id="out_seven"></span></div>
+    <input type="button" id="resetFormSeven" value="reset">
+  </div>
+  <script src="hw_2.js"></script>
+</body>
+</html>
