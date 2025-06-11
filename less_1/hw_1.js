@@ -3,7 +3,7 @@ let title = 'Roman';
 let age = 47;
 let sex;
 let newVar;
-
+// 'new commit'
 newVar = 100;
 console.log(newVar)
 
